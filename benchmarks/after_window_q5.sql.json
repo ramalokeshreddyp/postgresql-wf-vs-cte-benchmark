@@ -1,0 +1,141 @@
+[
+  {
+    "Plan": {
+      "Node Type": "Incremental Sort",
+      "Parallel Aware": false,
+      "Async Capable": false,
+      "Startup Cost": 2.97,
+      "Total Cost": 148449.32,
+      "Plan Rows": 1000000,
+      "Plan Width": 58,
+      "Actual Startup Time": 57.058,
+      "Actual Total Time": 1372.645,
+      "Actual Rows": 1000000,
+      "Actual Loops": 1,
+      "Sort Key": [
+        "user_id",
+        "order_id"
+      ],
+      "Presorted Key": [
+        "user_id"
+      ],
+      "Full-sort Groups": {
+        "Group Count": 22526,
+        "Sort Methods Used": [
+          "quicksort"
+        ],
+        "Sort Space Memory": {
+          "Average Sort Space Used": 29,
+          "Peak Sort Space Used": 29
+        }
+      },
+      "Pre-sorted Groups": {
+        "Group Count": 1180,
+        "Sort Methods Used": [
+          "quicksort"
+        ],
+        "Sort Space Memory": {
+          "Average Sort Space Used": 2899,
+          "Peak Sort Space Used": 2899
+        }
+      },
+      "Shared Hit Blocks": 1003680,
+      "Shared Read Blocks": 0,
+      "Shared Dirtied Blocks": 0,
+      "Shared Written Blocks": 0,
+      "Local Hit Blocks": 0,
+      "Local Read Blocks": 0,
+      "Local Dirtied Blocks": 0,
+      "Local Written Blocks": 0,
+      "Temp Read Blocks": 0,
+      "Temp Written Blocks": 0,
+      "Plans": [
+        {
+          "Node Type": "WindowAgg",
+          "Parent Relationship": "Outer",
+          "Parallel Aware": false,
+          "Async Capable": false,
+          "Startup Cost": 0.42,
+          "Total Cost": 97360.47,
+          "Plan Rows": 1000000,
+          "Plan Width": 58,
+          "Actual Startup Time": 33.179,
+          "Actual Total Time": 1164.811,
+          "Actual Rows": 1000000,
+          "Actual Loops": 1,
+          "Shared Hit Blocks": 1003674,
+          "Shared Read Blocks": 0,
+          "Shared Dirtied Blocks": 0,
+          "Shared Written Blocks": 0,
+          "Local Hit Blocks": 0,
+          "Local Read Blocks": 0,
+          "Local Dirtied Blocks": 0,
+          "Local Written Blocks": 0,
+          "Temp Read Blocks": 0,
+          "Temp Written Blocks": 0,
+          "Plans": [
+            {
+              "Node Type": "Index Scan",
+              "Parent Relationship": "Outer",
+              "Parallel Aware": false,
+              "Async Capable": false,
+              "Scan Direction": "Forward",
+              "Index Name": "idx_orders_user_created",
+              "Relation Name": "orders",
+              "Alias": "orders",
+              "Startup Cost": 0.42,
+              "Total Cost": 74860.47,
+              "Plan Rows": 1000000,
+              "Plan Width": 26,
+              "Actual Startup Time": 6.713,
+              "Actual Total Time": 591.793,
+              "Actual Rows": 1000000,
+              "Actual Loops": 1,
+              "Shared Hit Blocks": 1003674,
+              "Shared Read Blocks": 0,
+              "Shared Dirtied Blocks": 0,
+              "Shared Written Blocks": 0,
+              "Local Hit Blocks": 0,
+              "Local Read Blocks": 0,
+              "Local Dirtied Blocks": 0,
+              "Local Written Blocks": 0,
+              "Temp Read Blocks": 0,
+              "Temp Written Blocks": 0
+            }
+          ]
+        }
+      ]
+    },
+    "Planning": {
+      "Shared Hit Blocks": 111,
+      "Shared Read Blocks": 0,
+      "Shared Dirtied Blocks": 0,
+      "Shared Written Blocks": 0,
+      "Local Hit Blocks": 0,
+      "Local Read Blocks": 0,
+      "Local Dirtied Blocks": 0,
+      "Local Written Blocks": 0,
+      "Temp Read Blocks": 0,
+      "Temp Written Blocks": 0
+    },
+    "Planning Time": 0.707,
+    "Triggers": [],
+    "JIT": {
+      "Functions": 7,
+      "Options": {
+        "Inlining": false,
+        "Optimization": false,
+        "Expressions": true,
+        "Deforming": true
+      },
+      "Timing": {
+        "Generation": 0.368,
+        "Inlining": 0.0,
+        "Optimization": 0.464,
+        "Emission": 6.211,
+        "Total": 7.042
+      }
+    },
+    "Execution Time": 1416.79
+  }
+]

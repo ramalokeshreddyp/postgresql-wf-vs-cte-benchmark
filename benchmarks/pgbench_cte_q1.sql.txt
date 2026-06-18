@@ -1,0 +1,13 @@
+pgbench (15.18)
+transaction type: /queries/cte_q1.sql
+scaling factor: 1
+query mode: simple
+number of clients: 10
+number of threads: 2
+maximum number of tries: 1
+duration: 60 s
+number of transactions actually processed: 575
+number of failed transactions: 0 (0.000%)
+latency average = 1055.235 ms
+initial connection time = 10.564 ms
+tps = 9.476563 (without initial connection time)

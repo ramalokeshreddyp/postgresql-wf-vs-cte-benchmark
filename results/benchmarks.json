@@ -1,0 +1,35 @@
+{
+  "query_1": {
+    "wf_ms": 1023.76,
+    "cte_ms": 1173.35,
+    "index_speedup": 0.62
+  },
+  "query_2": {
+    "wf_ms": 945.29,
+    "cte_ms": 3069.07,
+    "index_speedup": 1.49
+  },
+  "query_3": {
+    "wf_ms": 3093.92,
+    "cte_ms": 1509.37,
+    "index_speedup": 0.96
+  },
+  "query_4": {
+    "wf_ms": 517.72,
+    "cte_ms": 251.53,
+    "index_speedup": 1.27
+  },
+  "query_5": {
+    "wf_ms": 1416.79,
+    "cte_ms": 1723.25,
+    "index_speedup": 0.92
+  },
+  "pgbench_results": {
+    "wf_tps": 9.297171,
+    "cte_tps": 9.476563,
+    "q1_wf_tps": 9.297171,
+    "q1_cte_tps": 9.476563,
+    "q2_wf_tps": 8.118341,
+    "q2_cte_tps": 2.930786
+  }
+}
