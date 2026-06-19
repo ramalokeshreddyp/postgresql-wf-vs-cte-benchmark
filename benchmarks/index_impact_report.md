@@ -3,22 +3,22 @@
 This report verifies the impact of applying database indexes on the 7-day rolling revenue average query (Window Function version).
 
 ## Execution Timings
-- **Execution Time Before Indexes**: 630.76 ms
-- **Execution Time After Indexes**: 1023.76 ms
-- **Speedup Ratio**: 0.62x
+- **Execution Time Before Indexes**: 970.83 ms
+- **Execution Time After Indexes**: 759.02 ms
+- **Speedup Ratio**: 1.28x
 
 ## Buffer and Sort Details
 
 ### Before Indexes
-- **Shared Hit Blocks**: 482
-- **Shared Read Blocks**: 10634
+- **Shared Hit Blocks**: 1065
+- **Shared Read Blocks**: 10051
 - **Shared Written Blocks**: 0
 - **Shared Dirtied Blocks**: 0
 - **Sort Nodes**: [{'method': 'quicksort', 'space_used': 30, 'space_type': 'Memory'}, {'method': 'quicksort', 'space_used': 30, 'space_type': 'Memory'}, {'method': 'external merge', 'space_used': 29384, 'space_type': 'Disk'}]
 
 ### After Indexes
-- **Shared Hit Blocks**: 1186
-- **Shared Read Blocks**: 9930
+- **Shared Hit Blocks**: 1769
+- **Shared Read Blocks**: 9347
 - **Shared Written Blocks**: 0
 - **Shared Dirtied Blocks**: 0
 - **Sort Nodes**: [{'method': 'quicksort', 'space_used': 30, 'space_type': 'Memory'}, {'method': 'quicksort', 'space_used': 30, 'space_type': 'Memory'}, {'method': 'external merge', 'space_used': 29384, 'space_type': 'Disk'}]

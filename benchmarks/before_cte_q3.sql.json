@@ -7,18 +7,18 @@
       "Parallel Aware": false,
       "Async Capable": false,
       "Startup Cost": 175464.84,
-      "Total Cost": 191513.22,
-      "Plan Rows": 52419,
+      "Total Cost": 191472.72,
+      "Plan Rows": 50394,
       "Plan Width": 84,
-      "Actual Startup Time": 422.043,
-      "Actual Total Time": 1483.487,
-      "Actual Rows": 179707,
+      "Actual Startup Time": 610.669,
+      "Actual Total Time": 2003.057,
+      "Actual Rows": 179809,
       "Actual Loops": 1,
       "Group Key": [
         "orders.user_id"
       ],
-      "Shared Hit Blocks": 669,
-      "Shared Read Blocks": 10475,
+      "Shared Hit Blocks": 1253,
+      "Shared Read Blocks": 9891,
       "Shared Dirtied Blocks": 0,
       "Shared Written Blocks": 0,
       "Local Hit Blocks": 0,
@@ -37,8 +37,8 @@
           "Total Cost": 177964.84,
           "Plan Rows": 1000000,
           "Plan Width": 34,
-          "Actual Startup Time": 389.069,
-          "Actual Total Time": 473.428,
+          "Actual Startup Time": 572.057,
+          "Actual Total Time": 680.763,
           "Actual Rows": 1000000,
           "Actual Loops": 1,
           "Sort Key": [
@@ -47,8 +47,8 @@
           "Sort Method": "external merge",
           "Sort Space Used": 47968,
           "Sort Space Type": "Disk",
-          "Shared Hit Blocks": 645,
-          "Shared Read Blocks": 10474,
+          "Shared Hit Blocks": 1228,
+          "Shared Read Blocks": 9891,
           "Shared Dirtied Blocks": 0,
           "Shared Written Blocks": 0,
           "Local Hit Blocks": 0,
@@ -69,12 +69,12 @@
               "Total Cost": 21116.0,
               "Plan Rows": 1000000,
               "Plan Width": 34,
-              "Actual Startup Time": 6.313,
-              "Actual Total Time": 76.68,
+              "Actual Startup Time": 8.227,
+              "Actual Total Time": 116.776,
               "Actual Rows": 1000000,
               "Actual Loops": 1,
-              "Shared Hit Blocks": 642,
-              "Shared Read Blocks": 10474,
+              "Shared Hit Blocks": 1225,
+              "Shared Read Blocks": 9891,
               "Shared Dirtied Blocks": 0,
               "Shared Written Blocks": 0,
               "Local Hit Blocks": 0,
@@ -100,7 +100,7 @@
       "Temp Read Blocks": 0,
       "Temp Written Blocks": 0
     },
-    "Planning Time": 0.442,
+    "Planning Time": 0.662,
     "Triggers": [],
     "JIT": {
       "Functions": 7,
@@ -111,13 +111,13 @@
         "Deforming": true
       },
       "Timing": {
-        "Generation": 0.833,
+        "Generation": 0.512,
         "Inlining": 0.0,
-        "Optimization": 0.278,
-        "Emission": 6.042,
-        "Total": 7.153
+        "Optimization": 0.39,
+        "Emission": 7.841,
+        "Total": 8.744
       }
     },
-    "Execution Time": 1510.03
+    "Execution Time": 2037.594
   }
 ]

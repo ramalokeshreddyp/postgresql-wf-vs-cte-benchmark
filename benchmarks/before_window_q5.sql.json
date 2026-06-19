@@ -4,12 +4,12 @@
       "Node Type": "Incremental Sort",
       "Parallel Aware": false,
       "Async Capable": false,
-      "Startup Cost": 144701.01,
-      "Total Cost": 220788.69,
+      "Startup Cost": 144701.07,
+      "Total Cost": 221174.47,
       "Plan Rows": 1000000,
       "Plan Width": 58,
-      "Actual Startup Time": 432.622,
-      "Actual Total Time": 1252.668,
+      "Actual Startup Time": 437.412,
+      "Actual Total Time": 1579.604,
       "Actual Rows": 1000000,
       "Actual Loops": 1,
       "Sort Key": [
@@ -20,7 +20,7 @@
         "user_id"
       ],
       "Full-sort Groups": {
-        "Group Count": 22526,
+        "Group Count": 22484,
         "Sort Methods Used": [
           "quicksort"
         ],
@@ -30,17 +30,17 @@
         }
       },
       "Pre-sorted Groups": {
-        "Group Count": 1180,
+        "Group Count": 1168,
         "Sort Methods Used": [
           "quicksort"
         ],
         "Sort Space Memory": {
-          "Average Sort Space Used": 2899,
-          "Peak Sort Space Used": 2899
+          "Average Sort Space Used": 2925,
+          "Peak Sort Space Used": 2925
         }
       },
-      "Shared Hit Blocks": 904,
-      "Shared Read Blocks": 10218,
+      "Shared Hit Blocks": 1487,
+      "Shared Read Blocks": 9635,
       "Shared Dirtied Blocks": 0,
       "Shared Written Blocks": 0,
       "Local Hit Blocks": 0,
@@ -59,12 +59,12 @@
           "Total Cost": 169699.84,
           "Plan Rows": 1000000,
           "Plan Width": 58,
-          "Actual Startup Time": 412.563,
-          "Actual Total Time": 1043.554,
+          "Actual Startup Time": 416.83,
+          "Actual Total Time": 1295.989,
           "Actual Rows": 1000000,
           "Actual Loops": 1,
-          "Shared Hit Blocks": 898,
-          "Shared Read Blocks": 10218,
+          "Shared Hit Blocks": 1481,
+          "Shared Read Blocks": 9635,
           "Shared Dirtied Blocks": 0,
           "Shared Written Blocks": 0,
           "Local Hit Blocks": 0,
@@ -83,8 +83,8 @@
               "Total Cost": 147199.84,
               "Plan Rows": 1000000,
               "Plan Width": 26,
-              "Actual Startup Time": 405.395,
-              "Actual Total Time": 493.367,
+              "Actual Startup Time": 408.924,
+              "Actual Total Time": 526.851,
               "Actual Rows": 1000000,
               "Actual Loops": 1,
               "Sort Key": [
@@ -93,8 +93,8 @@
               "Sort Method": "external merge",
               "Sort Space Used": 36208,
               "Sort Space Type": "Disk",
-              "Shared Hit Blocks": 898,
-              "Shared Read Blocks": 10218,
+              "Shared Hit Blocks": 1481,
+              "Shared Read Blocks": 9635,
               "Shared Dirtied Blocks": 0,
               "Shared Written Blocks": 0,
               "Local Hit Blocks": 0,
@@ -115,12 +115,12 @@
                   "Total Cost": 21116.0,
                   "Plan Rows": 1000000,
                   "Plan Width": 26,
-                  "Actual Startup Time": 4.871,
-                  "Actual Total Time": 74.736,
+                  "Actual Startup Time": 6.093,
+                  "Actual Total Time": 77.941,
                   "Actual Rows": 1000000,
                   "Actual Loops": 1,
-                  "Shared Hit Blocks": 898,
-                  "Shared Read Blocks": 10218,
+                  "Shared Hit Blocks": 1481,
+                  "Shared Read Blocks": 9635,
                   "Shared Dirtied Blocks": 0,
                   "Shared Written Blocks": 0,
                   "Local Hit Blocks": 0,
@@ -148,7 +148,7 @@
       "Temp Read Blocks": 0,
       "Temp Written Blocks": 0
     },
-    "Planning Time": 0.459,
+    "Planning Time": 0.461,
     "Triggers": [],
     "JIT": {
       "Functions": 7,
@@ -159,13 +159,13 @@
         "Deforming": true
       },
       "Timing": {
-        "Generation": 0.387,
+        "Generation": 0.362,
         "Inlining": 0.0,
-        "Optimization": 0.257,
-        "Emission": 4.622,
-        "Total": 5.266
+        "Optimization": 0.286,
+        "Emission": 5.819,
+        "Total": 6.467
       }
     },
-    "Execution Time": 1302.457
+    "Execution Time": 1642.498
   }
 ]

@@ -1,5 +1,4 @@
 import os
-import sys
 import subprocess
 import json
 import time
@@ -120,6 +119,11 @@ def run_pgbench(file_name, clients=10, duration=60):
 def main():
     os.makedirs("benchmarks", exist_ok=True)
     os.makedirs("results", exist_ok=True)
+    
+    # Clean up any existing indexes to ensure a true baseline (no indexes)
+    print("Dropping existing indexes to establish baseline...")
+    run_sql_command("DROP INDEX IF EXISTS idx_orders_user_created;")
+    run_sql_command("DROP INDEX IF EXISTS idx_users_cohort;")
     
     queries = {
         "q1": {"wf": "window_q1.sql", "cte": "cte_q1.sql"},

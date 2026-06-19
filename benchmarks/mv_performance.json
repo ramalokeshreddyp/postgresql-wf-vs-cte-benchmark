@@ -1,6 +1,6 @@
 {
-  "mv_creation_time_ms": 628.9303302764893,
-  "mv_read_time_ms": 143.6551570892334,
-  "raw_read_time_ms": 632.718563079834,
-  "mv_refresh_time_ms_after_10k_inserts": 642.9932117462158
+  "mv_creation_time_ms": 1368.9541816711426,
+  "mv_read_time_ms": 240.54980278015137,
+  "raw_read_time_ms": 1422.8464126586914,
+  "mv_refresh_time_ms_after_10k_inserts": 1347.790241241455
 }
